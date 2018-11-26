@@ -1,0 +1,17 @@
+ID: GIT_ADVANCED_FEATURES
+_schema-version: '2.0'
+description: GIT_ADVANCED_FEATURES
+version: 0.0.1
+
+modules:
+ - name: GIT_ADVANCED_FEATURES
+   type: hdb
+   path: GIT_ADVANCED_FEATURES
+   requires:
+    - name: hdi_GIT_ADVANCED_FEATURES
+
+resources:
+ - name: hdi_GIT_ADVANCED_FEATURES
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
